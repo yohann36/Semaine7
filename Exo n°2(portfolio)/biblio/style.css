@@ -2,75 +2,24 @@ body{
     background-image:url(../img/image.png);
     padding:0;
     margin:0;
-    color:white;
     font-size:12px;
 }
 
-header, footer{
-    background-image:url(../img/image2.png);
+header{
+  
     padding:10px;
     width:100%;
-}
-
-main img{
-    width:20%;
-    display:inline-block;
-    vertical-align:top;
-    box-sizing:border-box;
-}
-main{
-    width:90%;
-    margin:auto;
-    color:white;
-}
-
-p{
-    text-align:justify;
-}
-
-.conteneur{
-    margin:15px;
-    padding:10px;
-}
-
-.entete{
-    width:30%;
-    display:inline-block;
-    vertical-align:top;
-    box-sizing:border-box;
+    margin-top:30px;
 }
 
 
 
-header .image img{
-    width:50%;
-}
 
 ul li{
     list-style-type:none;
+    text-align:justify;
     
 }
-
-.colonne{
-    width:30%;
-    display:inline-block;
-    vertical-align:top;
-    box-sizing:border-box;
-}
-
-footer{
-    bottom:0;
-}
-
-footer p{
-    text-align:center;
-    width:30%;
-    display:inline-block;
-    vertical-align:top;
-    box-sizing:border-box;
-    margin-left:30px;
-}
-
 
 
 .container { 
@@ -120,6 +69,7 @@ footer p{
 }
 
     .portfolio-wrapper {
+        
         overflow:hidden;
         position: relative !important;
         background: #666;
@@ -127,6 +77,7 @@ footer p{
     }
 
     .portfolio img {
+        
         max-width:100%;
         position: relative;
     }
@@ -158,71 +109,4 @@ footer p{
                 display:block;
                 font-size:9px;
             }
-    
-    
-    
-
-
-
-/* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    .container {
-        width: 768px; 
-    }
-}
-
-
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-    .container { 
-        width: 95%; 
-    }
-    
-    #portfoliolist .portfolio {
-        width:48%;
-        margin:1%;
-    }       
-
-    #ads {
-        display:none;
-    }
-    
-}
-
-
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .container {
-        width: 70%;
-    }
-    
-    #ads {
-        display:none;
-    }
-    
-}
-
-/* #Clearing */
-
-/* Self Clearing Goodness */
-.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
-
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0; }
-.row:after,
-.clearfix:after {
-  clear: both; }
-.row,
-.clearfix {
-  zoom: 1; }
-
-.clear {
-  clear: both;
+ 
