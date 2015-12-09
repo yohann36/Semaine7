@@ -7,7 +7,7 @@ body{
 }
 
 .well{
-    background-color:#2C370B;
+    background-color:#0C771A;
     color:white;
 }
 
@@ -35,6 +35,8 @@ header{
 
 h1,h2{
     text-align:center;
+    color:white;
+    font-weight:bold;
 }
 
 section h3{
@@ -69,6 +71,8 @@ section{
     margin:1%;
     padding:0;
     list-style:none;
+    background-color:#085212;
+   
 }
 
     #filters li {
@@ -79,7 +83,7 @@ section{
         display: block;
         padding:5px 20px;       
         text-decoration:none;
-        color:#666;
+        color:white;
         cursor: pointer;
     }
     
