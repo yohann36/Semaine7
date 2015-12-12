@@ -1,36 +1,22 @@
+/*---Générale----------------------------------------------*/
+html{
+    background-image:url(img/noel.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
 body{
-    background-image:url(img/matrice.png);
     padding:0;
     margin:0;
     font-size:12px;
     color:white;
+   
+    
 }
 
 .well{
     background-color:#0C771A;
     color:white;
-}
-
-header{
-  
-    padding:10px;
-    width:100%;
-    margin-top:30px;
-    padding-top:30px;
-}
-
-.pprofil{
-    height:250px;
-}
-
-
-.nav navbar-nav{
-    background:#27ae60;
-}
-
-.title{
-    height:250px;
-    vertical-align:bottom;
 }
 
 h1,h2{
@@ -39,40 +25,64 @@ h1,h2{
     font-weight:bold;
 }
 
-section h3{
-    font-size:30px;
-    text-align:center;
-}
-
 ul li{
     color:white;
     list-style-type:none;
     text-align:justify;
     font-size:15px;
-    
 }
 
-section{
-    background-image:url(img/matrice.png);
-}
-
-.container { 
-    background-image:url(img/matrice.png);
+.container- { 
     position: relative; 
-    width: 960px; 
+    width: 100%; 
     margin: 0 auto; 
     -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;  
 }
- 
+
+
+/*---Générale----------------------------------------------*/
+
+
+header{
+    padding:10px;
+    width:100%;
+    margin-top:30px;
+    padding-top:30px;
+}
+
+.nav navbar-nav{
+    background:#27ae60;
+}
+
+.pprofil{
+    height:250px;
+}
+
+.title{
+    height:250px;
+    vertical-align:bottom;
+}
+
+
+
+/*---Main Area----------------------------------------------*/
+
+
+section h3{
+    font-size:30px;
+    text-align:center;
+}
+
+
+
 #filters {
     margin:1%;
     padding:0;
     list-style:none;
-    background-color:#085212;
-   
+    background-color:#085212; 
 }
 
     #filters li {
@@ -109,7 +119,7 @@ section{
         
         overflow:hidden;
         position: relative !important;
-        background: white;
+        background: none;
         cursor:pointer;
     }
 
@@ -151,6 +161,12 @@ section{
                 display:block;
                 font-size:9px;
             }
+            
+            
+            
+/*---Footer Area----------------------------------------------*/
+           
+            
             
 .contact--img{
     width:50px;

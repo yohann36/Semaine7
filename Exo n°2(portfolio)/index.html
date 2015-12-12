@@ -1,72 +1,41 @@
 <!DOCTYPE html>                  
 <html>
     <head>        
-      <title>CV Interactif</title>                
-      <meta charset="utf-8"/>    
-
+                        
+        <meta charset="utf-8"/>   
+        
+        <!--S'assure que EI est à jour-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!--Rendu sans zoom sur les appareil mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="CV">
+        <meta name="author" content="Yohann ALAPETITE">
+        
+        <!--link vers bootstrap-->
+        <link href="biblio/bootstrap.css" rel="stylesheet" >
+        
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
       
-      <link href="biblio/bootstrap.min.css" rel="stylesheet" >
       
-     
-      <!--SCRIPT--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+        <title>CV Interactif</title>
        
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="biblio/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="biblio/jquery.mixitup.min.js"></script> 
-        
-        <link rel='stylesheet' type='text/css' href='biblio/style.css'>
-        
-        
-        <script type="text/javascript">
-    $(function () {
-        
-        var filterList = {
-        
-            init: function () {
-            
-                // Plugin Mixitup, qui permet de filtrer les vignettes par catégorie
-                $('#portfoliolist').mixitup({
-                    targetSelector: '.portfolio',
-                    filterSelector: '.filter',
-                    effects: ['fade'],
-                    easing: 'snap',
-                    // call the hover effect
-                    onMixEnd: filterList.hoverEffect()
-                });             
-            
-            },
-            
-            hoverEffect: function () {
-            
-                // Fonction pour l'effet "hover"
-                $('#portfoliolist .portfolio').hover(
-                    function () {
-                        $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-                        $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');             
-                    },
-                    function () {
-                        $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-                        $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');                               
-                    }       
-                );              
-            
-            }
-        };
-        
-        // Lance les deux fonctions "hover" et "filtre"
-        filterList.init();
-        
-        
-    }); 
-    </script>
-
-     
     </head>
+    
+    
+    
      
 <!--BODY--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                    
    
     <body data-spy="scroll" data-target=".navbar">
-        
+    
     <header>
         <div class="container-fluid">
             <div class="row">
@@ -121,7 +90,7 @@
                
               
                 
-             <div class="container">   
+             <div class="container-fluid">   
                   <h3 class="well">MES REALISATIONS</h3>
  <!--CARROUSELLE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                
                     <h2>MON PORTFOLIO</h2>
@@ -311,7 +280,7 @@
  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
         
          <section class="jumbotron" id="menu2">
-            <div class="container">
+            <div class="container-fluid">
                 <h3 class="well">MES FORMATIONS</h3>
                      <ul>
                          <li><strong>Formation Codeur (En cours) :</strong><ul> <li> htlm, CSS, JS, PHP, Python, Ruby lié au développement de site ou apps web, organisation du travail et recherche de solution.Simplon , OpenclassRoom Châteauroux.</li> </li>      
@@ -329,7 +298,7 @@
  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->        
         
          <section class="jumbotron" id="menu3">
-            <div class="container">
+            <div class="container-fluid">
                 <h3 class="well">MES EXPERIENCES</h3>
                     <ul>
                       <li><strong>Dessinateur-projeteur :</strong> Plan de permis de construire de bungalows - Création de  document de communication.2015 - Bali- Indonésie.</li>
@@ -345,7 +314,7 @@
  <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
  
          <section class="jumbotron" id="menu4">
-            <div class="container">
+            <div class="container-fluid">
                 <h3 class="well">DIVERS</h3>
                    <ul>
                      <li><strong>Langues : </strong>Français (langue maternelle), Anglais (parlé et écrit), Espagnol (notion), langague informatique.</li>
@@ -408,8 +377,62 @@
                 
         </section>
     
- <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->         
-   	
+       
+ <!--SCRIPTS (en fin de page pour éviter de ralentir le téléchargement)--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->                
+       
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="biblio/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="biblio/jquery.mixitup.min.js"></script> 
+        
+        <link rel='stylesheet' type='text/css' href='biblio/style.css'>
+        
+        
+        <script type="text/javascript">
+    $(function () {
+        
+        var filterList = {
+        
+            init: function () {
+            
+                // Plugin Mixitup, qui permet de filtrer les vignettes par catégorie
+                $('#portfoliolist').mixitup({
+                    targetSelector: '.portfolio',
+                    filterSelector: '.filter',
+                    effects: ['fade'],
+                    easing: 'snap',
+                    // call the hover effect
+                    onMixEnd: filterList.hoverEffect()
+                });             
+            
+            },
+            
+            hoverEffect: function () {
+            
+                // Fonction pour l'effet "hover"
+                $('#portfoliolist .portfolio').hover(
+                    function () {
+                        $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+                        $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');             
+                    },
+                    function () {
+                        $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+                        $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');                               
+                    }       
+                );              
+            
+            }
+        };
+        
+        // Lance les deux fonctions "hover" et "filtre"
+        filterList.init();
+        
+        
+    }); 
+    </script>
+
+     
+<!-- FIN DES SCRIPTs --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->       
+   
     </body>
 
     
